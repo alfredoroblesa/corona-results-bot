@@ -1,0 +1,8 @@
+__pycache__
+.vscode
+.git
+.env
+venv
+env.bat
+delete_env.bat
+set_commands.txt
