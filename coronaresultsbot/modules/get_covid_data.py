@@ -11,7 +11,7 @@ def get_covid_data(country):
         return msg
 
     header_div      = soup.find_all('div')[5]
-    last_update     = header_div.find_all('div')[4].find_all('div')[3].string.strip()
+    last_update     = header_div.find_all('div')[6].string.strip()
     total_cases     = clean_string(header_div.find_all('span')[0].string)
     deaths          = clean_string(header_div.find_all('span')[1].string)
     recovered       = clean_string(header_div.find_all('span')[2].string)
